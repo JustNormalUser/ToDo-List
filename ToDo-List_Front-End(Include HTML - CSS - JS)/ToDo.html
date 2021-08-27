@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="ToDo.css">
+</head>
+<body>
+<div class="ortala">
+<input type="text" placeholder="Kelime" id="kelime_input" class="todo_input"/>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="ToDo.js" ></script>
+<button class="todo_button" onclick="ekle()">
+    Ekle
+</button>
+<br>
+
+
+    <span>İçerikler:</span>
+    <div>
+        <ul id="icerik">
+            
+        </ul>
+    </div>
+
+</div>
+
+<div class="ekle-popup">
+    <div class="ekle-model">
+        <div class="ekleclose">+</div>
+        <form action="">
+            <input type="text" id="ekletextinput">
+            <textarea id= "ekledescriptionarea" placeholder="Açıklama" name="descriptionarea" cols="30" rows="5"></textarea>
+            <a href="#" id="EkleButton" class="Button">Ekle</a>
+        </form>
+    </div>
+</div>
+
+
+<div class="bg-modal">
+    <div class="model-content">
+        <div class="close">+</div>
+        <form action="">
+            <input type="text" id="textinput">
+            <textarea id= "descriptionarea" name="descriptionarea" cols="30" rows="5"></textarea>
+            <a href="#" id="EditButton" class="Button">Düzenle</a>
+            <span id = "tarihVEsaat"></span>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>  
